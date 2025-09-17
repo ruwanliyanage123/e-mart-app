@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
 
 export default async function ProductsPage() {
-    const res = await fetch("http://localhost:3000/api/products"); // Next.js API route
+    const res = await fetch("http://localhost:5001/products"); // Next.js API route
     const products = await res.json();
 
     return (
